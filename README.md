@@ -15,3 +15,4 @@ Work from that branch
 Commit and push your branch
 Do a pull request so the lead developer can check and accept/deny your code
 Merge your code to the main branch
+Adding in new comments
