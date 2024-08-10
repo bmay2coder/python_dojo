@@ -9,8 +9,9 @@ Welcome to the Coding Dojo Python course.
 8. I am going to do my best to help you think like a developer.
 
 Like a developer:
-Git pull the code
+Git pull the code # This will pull down the main code
 Create a branch
 Work from that branch
 Commit and push your branch
 Do a pull request so the lead developer can check and accept/deny your code
+Merge your code to the main branch
