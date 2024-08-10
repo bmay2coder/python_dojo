@@ -7,6 +7,8 @@ Welcome to the Coding Dojo Python course.
 6. The second way is for other developers who need to work on the same code.
 7. If you have not, please create your own github repository. You will need to work in your repository and commit your changes daily.
 8. I am going to do my best to help you think like a developer.
+9. There will be one python file per week and inside the file all of the notes and code for three lectures
+
 
 Like a developer:
 Git pull the code # This will pull down the main code
