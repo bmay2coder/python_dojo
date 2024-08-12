@@ -19,7 +19,6 @@ Like a developer:
 4. Commit and push your branch
 5. Do a pull request so the lead developer can check and accept/deny your code
 6. Merge your code to the main branch
-7. Adding in new comments
 
 Branching Strategy 
 ![alt text](image.png)
