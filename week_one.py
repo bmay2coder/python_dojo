@@ -3,27 +3,27 @@
 
 # FOUR SPACES
 
-# def some_function(input1, input2):
-#     count=0
-#     for i in input1:
-#         print(i, end=" ")
+def some_function(input1, input2):
+    count=0
+    for i in input1:
+        print(i, end=" ")
         
-#         for z in input2:
-#             print(z, end=" ")
-#             count+=1
-#             pass
+        for z in input2:
+            print(z, end=" ")
+            count+=1
+            pass
         
-#         print("")
+        print("")
         
-#     return(count)
+    return(count)
 
-# def main():
-#     number=some_function((1,2,3), ["python", "is" , "fun"])
-#     print("The count for this program is {}" .format(number))
-#     pass
+def main():
+    number=some_function((1,2,3), ["python", "is" , "fun"])
+    print("The count for this program is {}" .format(number))
+    pass
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
 
 #### Data Types
 
@@ -468,12 +468,122 @@
 #     return num_list
 # a = [2,4,10,16]
 # b = multiply(a,5)
+
 # print(b)
 
 #### Dictionaries
 
+# # User curly brackets {}
+# # They have key-value pairs
+# # {'key': 'value', 'key2': 'value2'}
+
+# #literal notation
+# person = {"first": "Ada", "last": "Lovelace", "age": 42, "is_organ_donor": True}
+# capitals = {} #create an empty dictionary
+
+# print(person)
+
+# #literal notation
+# person = {"first": "Ada", "last": "Lovelace", "age": 42, "is_organ_donor": True}
+# capitals = {} #create an empty dictionary then add values
+# capitals["svk"] = "Bratislava"
+# capitals["deu"] = "Berlin"
+# capitals["dnk"] = "Copenhagen"
+# print(capitals)
+
 #### Dictionary Manipulation
+
+# person = {"first": "Ada", "last": "Lovelace", "age": 42, "is_organ_donor": True}
+# print(person)
+# print(len(person))
+# print(str(person))
+# person.clear()
+# print(person)
+
+# # Adds a new key value pair for email to person
+# person["email"] = "alovelace@codingdojo.com"
+# print(person)
+        
+# # Changes person's "last" value to "Bobada"
+# person["last"] = "Bobada"
+# print(person)
+
+# person = {"first": "Ada", "last": "Lovelace", "age": 42, "is_organ_donor": True}
+# # Adds a new key value pair for email to person
+# person["email"] = "alovelace@codingdojo.com"
+        
+# # Changes person's "last" value to "Bobada"
+# person["last"] = "Bobada"
+# print(person)
+
+# if "email" not in person:
+#     person["email"] = "newemail@email.com"
+# else:
+#     print("Would you like to replace your existing email?")
+
+# countries_so_far = {"Mexico": 1, "Morocco": 1}
+# new_visits = ["Albania", "Mexico", "Togo", "Morocco"]
+    
+# # To add Albania to the list
+# countries_so_far["Albania"] = 1
+# # To add 1 to the Mexico tally
+# countries_so_far["Mexico"] += 1 # Changes Mexico tally to 2!
+# # your code here to finish updating your travel log!
+
+# print(person["first"])
+# full_name = person["first"] + " " + person["last"]
+# value_removed = capitals.pop('svk') # will remove the key 'svk' and return it's value
+# del capitals['dnk'] # will delete the key, and not return anything
+
+# person = {"first": "Ada", "last": "Lovelace", "age": 42, "is_organ_donor": True}
+
+# person = {
+#     "first": "Ada", 
+#     "last": "Lovelace", 
+#     "age": 42, 
+#     "is_organ_donor": True
+# }
 
 #### Loops & Dictionaries
 
+# my_dict = { "name": "Noelle", "language": "Python" }
+# for each_key in my_dict:
+#     print(each_key)
+
+# my_dict = { "name": "Noelle", "language": "Python" }
+# for each_key in my_dict:
+#     print(my_dict[each_key])
+
+# capitals = {"Washington":"Olympia","California":"Sacramento","Idaho":"Boise","Illinois":"Springfield","Texas":"Austin","Oklahoma":"Oklahoma City","Virginia":"Richmond"}
+# # another way to iterate through the keys
+# for key in capitals.keys():
+#      print(key)
+
+# #to iterate through the values
+# for val in capitals.values():
+#      print(val)
+
+# #to iterate through both keys and values
+# for key, val in capitals.items():
+#      print(key, " = ", val)
+
 #### Nested Dictionaries & Lists
+
+# # List of dictionaries
+# users = [
+#     {"first": "Ada", "last": "Lovelace"}, # index 0
+#     {"first": "Alan", "last": "Turing"}, # index 1
+#     {"first": "Eric", "last": "Idle"} # index 2
+# ]
+# # Dictionary of lists
+# resume_data = {
+#     "skills": ["front-end", "back-end", "database"],
+#     "languages": ["Python", "JavaScript"],
+#     "hobbies":["rock climbing", "knitting"]
+# }
+
+# print(users[1]["last"]) # prints Lovelace
+
+# # Can you predict what the output is?
+# print(resume_data["skills"][1])
+# print(users[2]["first"])
