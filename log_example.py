@@ -1,28 +1,28 @@
-# import logging
+import logging
 
-# # create logger
-# logger = logging.getLogger('simple_example')
-# logger.setLevel(logging.DEBUG)
+# create logger
+logger = logging.getLogger('simple_example')
+logger.setLevel(logging.DEBUG)
 
-# # create console handler and set level to debug
-# ch = logging.StreamHandler()
-# ch.setLevel(logging.DEBUG)
+# create console handler and set level to debug
+ch = logging.StreamHandler()
+ch.setLevel(logging.DEBUG)
 
-# # create formatter
-# formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+# create formatter
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-# # add formatter to ch
-# ch.setFormatter(formatter)
+# add formatter to ch
+ch.setFormatter(formatter)
 
-# # add ch to logger
-# logger.addHandler(ch)
+# add ch to logger
+logger.addHandler(ch)
 
-# # 'application' code
-# logger.debug('debug message')
-# logger.info('info message')
-# logger.warning('warn message')
-# logger.error('error message')
-# logger.critical('critical message')
+# 'application' code
+logger.debug('debug message')
+logger.info('info message')
+logger.warning('warn message')
+logger.error('error message')
+logger.critical('critical message')
 
 # # importing module
 # import logging
@@ -60,22 +60,22 @@
 # logger.error('error message')
 # logger.critical('critical message')
 
-import logging
+# import logging
 
-logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
-
-
-def perform_operation(value):
-    if value < 0:
-        raise ValueError("Invalid value: Value cannot be negative.")
-    else:
-        # Continue with normal execution
-        logging.info("Operation performed successfully.")
+# logging.basicConfig(level=logging.DEBUG,
+#                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 
-try:
-    input_value = int(input("Enter a value: "))
-    perform_operation(input_value)
-except ValueError as ve:
-    logging.exception("Exception occurred: %s", str(ve))
+# def perform_operation(value):
+#     if value < 0:
+#         raise ValueError("Invalid value: Value cannot be negative.")
+#     else:
+#         # Continue with normal execution
+#         logging.info("Operation performed successfully.")
+
+
+# try:
+#     input_value = int(input("Enter a value: "))
+#     perform_operation(input_value)
+# except ValueError as ve:
+#     logging.exception("Exception occurred: %s", str(ve))

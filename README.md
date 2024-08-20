@@ -1,3 +1,16 @@
+# Introduction
+# Why am here
+# Github
+# Scheduling 1:1
+# Assignment feedback 
+## Core assgnments 90% more in good standing
+## Belt Exams
+### orange 8 - 9.49 with 24 hours
+### red 8 - 9.49 within 5 hours
+### black 9.5+ within 5 hours
+## Discussion questions
+### How attendance is tracked - mandatory
+
 Welcome to the Coding Dojo Python course.
 1. In this repository I will be adding notes and test code for each lecture, and other things as needed.
 2. You can use the repository as reference.

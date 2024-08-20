@@ -3,27 +3,27 @@
 
 # FOUR SPACES
 
-def some_function(input1, input2):
-    count=0
-    for i in input1:
-        print(i, end=" ")
+# def some_function(input1, input2):
+#     count=0
+#     for i in input1:
+#         print(i, end=" ")
         
-        for z in input2:
-            print(z, end=" ")
-            count+=1
-            pass
+#         for z in input2:
+#             print(z, end=" ")
+#             count+=1
+#             pass
         
-        print("")
-        
-    return(count)
+#         print("")
+      
+#     return(count)
 
-def main():
-    number=some_function((1,2,3), ["python", "is" , "fun"])
-    print("The count for this program is {}" .format(number))
-    pass
+# def main():
+#     number=some_function((1,2,3), ["python", "is" , "fun"])
+#     print("The count for this program is {}" .format(number))
+#     pass
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
 #### Data Types
 
@@ -47,7 +47,8 @@ if __name__ == "__main__":
 
 # dog = ('Bruce', 'cocker spaniel', 19, False)
 # print(dog[0])		# output: Bruce
-# dog[1] = 'dachshund'	# ERROR: cannot be modified ('tuple' object does not support item assignment)
+# print(type(dog))
+# #dog[1] = 'dachshund'	# ERROR: cannot be modified ('tuple' object does not support item assignment)
 
 # empty_list = []
 # ninjas = ['Rozen', 'KB', 'Oliver']
@@ -106,13 +107,14 @@ if __name__ == "__main__":
 # name = "Zen"
 # print("My name is " + name)
 
-# print("Hello " + 42)			# output: TypeError
+# #print("Hello " + 42)			# output: TypeError
 # print("Hello " + str(42))		# output: Hello 42
 
 # total = 35
 # user_val = "26"
-# total = total + user_val		# output: TypeError
+# #total = total + user_val		# output: TypeError
 # total = total + int(user_val)		# total will be 61
+# print(total)
 
 # first_name = "Zen"
 # last_name = "Coder"
@@ -136,14 +138,14 @@ if __name__ == "__main__":
 # greeting = "Hello my name is ", first_name, last_name
 # print(greeting) 
 # # Desired output: Hello my name is Alana Da Silva
-# print("I am {age} years old") 
+# print(f"I am {age} years old") 
 # # Desired output: I am 36 years old
-# print("I work as a profession.".format("profession"))
+# print("I work as a {}".format(profession))
 # # Desired output: I work as a Software Developer.
 # exp_string = "I have worked in the field for {} years."
-# print(exp_string.format())
+# #print(exp_string.format())
 # # Desired output: I have worked in the field for 5 years.
-# print("I started in the field when I was " + age - years_experience " years old.")
+# #print("I started in the field when I was " + age - years_experience " years old.")
 # # Desired output: I started in the field when I was 31 years old.
 
 # hw = "Hello %s" % "world" 	# with literal values
@@ -167,7 +169,7 @@ if __name__ == "__main__":
 #### Lecture 2
 #### Lists Overview
 
-# # A good example is a grocery list.
+# A good example is a grocery list.
 
 # groceries=[
 #     "eggs",
@@ -188,6 +190,7 @@ if __name__ == "__main__":
 # ninjas = ['Rozen', 'KB', 'Oliver']
 # my_list = ['4', ['list', 'in', 'a', 'list'], 987]
 # empty_list = []
+# print(my_list)
 
 # # You can concatenate lists
 # fruits = ['apple', 'banana', 'orange', 'strawberry']
@@ -220,6 +223,13 @@ if __name__ == "__main__":
 # drawers[1] = drawers[0]
 # print(drawers) # prints ["tchotchkes", "tchotchkes", "pens"]
 
+# nums = [1,2,3,4,5]
+# nums.append(99)
+# print(nums)
+# #the output would be [1,2,3,4,5,99]
+
+
+
 # # Slicing
 # words = ["start","going","till","the","end"]
 # # Sub-ranges (portions) of the list
@@ -233,7 +243,7 @@ if __name__ == "__main__":
 # print(copy_of_words) # prints ['start', 'going', 'till', 'the', 'end', 'dojo']
 # print(words) # prints ['start', 'going', 'till', 'the', 'end']
 
-#### Built-in Functions for Lists
+# ### Built-in Functions for Lists
 
 # my_list = [1, 'Zen', 'hi']
 # print(len(my_list))
@@ -256,12 +266,17 @@ if __name__ == "__main__":
 # new_list.reverse()
 # print(new_list)
 # new_list.sort()
-# print(new_list)
+# # print(new_list)
+# bret_list=[1,2,3]
+# for i in bret_list:
+#     bret_list.append(i)
+
+# print(my_list)
 
 #### Tuples
 
-# # Use the parathesis () instead of brackets [] like lists, or no () at all. Normal is using ()
-# # You can't change Tuples they are immuntable.
+# Use the parathesis () instead of brackets [] like lists, or no () at all. Normal is using ()
+# You can't change Tuples they are immuntable.
 
 # tuple_data = ('physics', 'chemistry', 1997, 2000)
 # tuple_num = (1, 2, 3, 4, 5 )
@@ -273,26 +288,26 @@ if __name__ == "__main__":
 
 #### Conditionals
 
-# multiple line tab forward and alt tab backwards
-    # x = 12
-    # if x > 50:
-    #     print("bigger than 50")
-    # else:
-    #     print("smaller than 50")
-    # # because x is not greater than 50, the second print statement is the only one that will execute
+# #multiple line tab forward and alt tab backwards
+# x = 12
+# if x > 50:
+#     print("bigger than 50")
+# else:
+#     print("smaller than 50")
+# # because x is not greater than 50, the second print statement is the only one that will execute
 
-    # x = 55
-    # if x > 10:
-    #     print("bigger than 10")
-    # elif x > 50:
-    #     print("bigger than 50")
-    # else:
-    #     print("smaller than 10")
-    # # even though x is greater than 10 and 50, the first true statement is the only one that will execute, so we will only see 'bigger than 10'
+# x = 55
+# if x > 10:
+#     print("bigger than 10")
+# elif x > 50:
+#     print("bigger than 50")
+# else:
+#     print("smaller than 10")
+# # even though x is greater than 10 and 50, the first true statement is the only one that will execute, so we will only see 'bigger than 10'
 
-    # if x < 10:
-    #     print("smaller than 10")
-    # # nothing happens, because the statement is false   
+# if x < 10:
+#     print("smaller than 10")
+# # nothing happens, because the statement is false   
 
 """
 -----------------------------------------------------------------------------------------------------
@@ -300,7 +315,7 @@ if __name__ == "__main__":
 #### Lecture 3
 #### Loops
 
-# # Loops using range()
+# Loops using range()
 # for i in range(5):
 #     print(i)
 
@@ -312,11 +327,11 @@ if __name__ == "__main__":
 
 # for x in range(0, 10, 2):
 #     print(x)
-# # What is going to be the output
+# What is going to be the output
 
 # for x in range(5, 1, -3):
 #     print(x)
-# # What is going to be the output
+# What is going to be the output
 
 #### Looping Over Lists & Strings
 
@@ -324,8 +339,8 @@ if __name__ == "__main__":
 #     print(x)
 
 # my_list = ["abc", 123, "xyz"]
-# for i in range(0, len(my_list)):
-#     print(i, my_list[i])
+# # for i in range(0, len(my_list)):
+# #     print(i, my_list[i])
     
 # for v in my_list:
 #     print(v)
@@ -474,8 +489,8 @@ if __name__ == "__main__":
 #### Dictionaries
 
 # # User curly brackets {}
-# # They have key-value pairs
-# # {'key': 'value', 'key2': 'value2'}
+# They have key-value pairs
+# {'key': 'value', 'key2': 'value2'}
 
 # #literal notation
 # person = {"first": "Ada", "last": "Lovelace", "age": 42, "is_organ_donor": True}
@@ -491,7 +506,7 @@ if __name__ == "__main__":
 # capitals["dnk"] = "Copenhagen"
 # print(capitals)
 
-#### Dictionary Manipulation
+# #### Dictionary Manipulation
 
 # person = {"first": "Ada", "last": "Lovelace", "age": 42, "is_organ_donor": True}
 # print(person)
@@ -569,21 +584,21 @@ if __name__ == "__main__":
 
 #### Nested Dictionaries & Lists
 
-# # List of dictionaries
-# users = [
-#     {"first": "Ada", "last": "Lovelace"}, # index 0
-#     {"first": "Alan", "last": "Turing"}, # index 1
-#     {"first": "Eric", "last": "Idle"} # index 2
-# ]
-# # Dictionary of lists
-# resume_data = {
-#     "skills": ["front-end", "back-end", "database"],
-#     "languages": ["Python", "JavaScript"],
-#     "hobbies":["rock climbing", "knitting"]
-# }
+# List of dictionaries
+users = [
+    {"first": "Ada", "last": "Lovelace"}, # index 0
+    {"first": "Alan", "last": "Turing"}, # index 1
+    {"first": "Eric", "last": "Idle"} # index 2
+]
+# Dictionary of lists
+resume_data = {
+    "skills": ["front-end", "back-end", "database"],
+    "languages": ["Python", "JavaScript"],
+    "hobbies":["rock climbing", "knitting"]
+}
 
-# print(users[1]["last"]) # prints Lovelace
+print(users[1]["last"]) # prints Lovelace
 
-# # Can you predict what the output is?
-# print(resume_data["skills"][1])
-# print(users[2]["first"])
+# Can you predict what the output is?
+print(resume_data["skills"][1])
+print(users[2]["first"])
