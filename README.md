@@ -1,7 +1,11 @@
 # Introduction
+Hi, my name is Bret May and I will be your professor through this glorious 8 week adventure building a full stack application using Python, Flask, and MySQL
 # Why am here
+I am here because I enjoy teaching and helping students move forward in whatever area they choose. The choice this time is a Python bootcamp and I am happy to be here and ready to do my best for you. I want you to feel comfortable and confident with your choice of learning Python
 # Github
+https://github.com/bmay2coder/python_dojo.git
 # Scheduling 1:1
+
 # Assignment feedback 
 ## Core assgnments 90% more in good standing
 ## Belt Exams
