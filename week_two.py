@@ -19,19 +19,19 @@
 # Sensei Exercise: try just printing the variable, user_ada.
 #   What prints to the terminal?
 
-class Shoe:
-    # now our method has 4 parameters (including self)!
-    def __init__(self, brand, shoe_type, price):
-    	# we assign them accordingly
-        self.brand = brand
-        self.type = shoe_type
-        self.price = price
-    	# the status is set to True by default
-        self.in_stock = True
-skater_shoe = Shoe("Vans", "Low-top Trainers", 59.99)
-dress_shoe = Shoe("Jack & Jill Bootery", "Ballet Flats", 29.99)
-print(skater_shoe.brand)	# output: Low-top Trainers
-print(dress_shoe.type)	# output: Ballet Flats
+# class Shoe:
+#     # now our method has 4 parameters (including self)!
+#     def __init__(self, brand, shoe_type, price):
+#     	# we assign them accordingly
+#         self.brand = brand
+#         self.type = shoe_type
+#         self.price = price
+#     	# the status is set to True by default
+#         self.in_stock = True
+# skater_shoe = Shoe("Vans", "Low-top Trainers", 59.99)
+# dress_shoe = Shoe("Jack & Jill Bootery", "Ballet Flats", 29.99)
+# print(skater_shoe.brand)	# output: Low-top Trainers
+# print(dress_shoe.type)	# output: Ballet Flats
 
 # class User:		# here's what we have so far
 #     def __init__(self, name, email):
@@ -116,11 +116,37 @@ print(dress_shoe.type)	# output: Ballet Flats
 #         self.position = position
 #         self.team = team
 
-# kevin = {"name": "Kevin Durant", "age":34, "position": "small forward", "team": "Brooklyn Nets"}
+# kevin = {
+#     "name": "Kevin Durant", 
+#     "age":34, 
+#     "position": "small forward", 
+#     "team": "Brooklyn Nets"
+#     }
      
 # # Pass in all the values from the dictionary by their keys
 # player_kevin = Player(kevin["name"], kevin["age"], kevin["position"], kevin["team"])
 # print(player_kevin.position)
+
+
+# Association example
+
+# Build a Car object
+class Car:
+    def __init__(self, model):
+        self.model = model
+
+# Build a Driver object
+class Driver:
+    def __init__(self, name, car):
+        self.name = name
+        self.car = car  # Association with Car class
+
+# Create my objects
+my_car = Car("Toyota")
+driver = Driver("Alice", my_car) # I am passing in the association 
+
+print(driver.name)  # Output: Alice
+print(driver.car.model)  # Output: Toyota
 
 
 # Lecture 3

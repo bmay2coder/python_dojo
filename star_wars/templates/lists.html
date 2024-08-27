@@ -1,0 +1,8 @@
+<h1>Apprentice Randomly</h1>
+{% for number in random_numbers %}
+    <p>{{ number }}</p>
+{% endfor %}
+<h1>Apprentices/h1>
+{% for apprentice in apprentices %}
+    <p>{{ apprentice['name'] }} - {{ apprentice['age'] }}</p>
+{% endfor %}
