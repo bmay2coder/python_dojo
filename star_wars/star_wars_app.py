@@ -23,7 +23,7 @@ def student_apprentices():
 
 @app.route('/apprentice/<int:num>/<name>')
 def apprentice_name_amount(num, name):
-    return render_template("name.html", num = num, name = name.capitalize())
+    return render_template("lists.html", num = num, name = name.capitalize())
 
 @app.route('/apprentice/fly/')
 def apprentice_fly():
@@ -32,6 +32,22 @@ def apprentice_fly():
 @app.route('/apprentice/fly/<int:num>')
 def apprentice_fly_amount(num):
     return render_template("fly.html",num = num,color="blue")
+
+@app.route('/apprentice/fly/<int:num>/<color>')
+def apprentice_fly_amount_color(num, color):
+    return render_template("fly.html",num = num,color=color)
+
+@app.route('/apprentice/flight/patterns')
+def apprentice_flight_patterns():
+    return render_template("flightpatterns.html",row=8,column=8,color='red',color2='black')
+
+@app.route('/apprentice/flight/patterns/<int:row>/<int:column>')
+def apprentice_flight_patterns_rows_columns(row, column):
+    return render_template("flightpatterns.html",row = row,column = column,color='red',color2='black')    
+
+@app.route('/apprentice/flight/patterns/<int:row>/<int:column>/<color>/<color2>')
+def apprentice_flight_patterns_rows_columns_colors(row, column, color, color2):
+    return render_template("flightpatterns.html",row = row,column = column,color = color, color2 = color2 ) 
 
 @app.route('/apprentice/table/game')
 def apprentice_table_game():
@@ -53,6 +69,3 @@ if __name__=="__main__":   # Ensure this file is being run directly and not from
     app.run(debug=True)    # Run the app in debug mode.
 	
 
-
-
-	
