@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Stores and Lightsabers</title>
+</head>
+<body>
+    <div class="card-body">
+        <h2 class="card-title text-primary">{{store.name}} Lightsabers</h2>
+        <table class="table table-info">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Level</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for lightsaber in store.lightsabers %}
+                <tr>
+                    <td>{{ lightsaber.name }}</td>
+                    <td>{{ lightsaber.type }}</td>
+                    <td>{{ lightsaber.level }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+<a href="/" class="text-center mx-auto">Home</a>
+</body>
+</html>

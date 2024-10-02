@@ -1,0 +1,1 @@
+This application is replicating the core assignment Dojo Survey
